@@ -2,6 +2,20 @@
 
 ## Changelog
 
+### 6.0.2.0
+
+#### Added
+
+- Support for Ubuntu 24
+
+#### Changed
+
+- 
+
+#### Removed
+
+- 
+
 ### 6.0.1.0
 
 #### Added
