@@ -126,15 +126,15 @@ source-repository head
 
 library
   exposed-modules:      Gifcurry
-  build-depends:        base == 4.11.*
+  build-depends:        base >= 4.11 && < 5
                       , process >= 1.6.2.0
-                      , temporary >= 1.2 && < 1.3
-                      , directory == 1.3.*
-                      , text == 1.2.*
-                      , filepath == 1.4.*
-                      , filemanip == 0.3.6.*
-                      , bytestring == 0.10.*
-                      , yaml == 0.8.26.*
+                      , temporary >= 1.2 && < 1.4
+                      , directory >= 1.3 && < 1.4
+                      , text >= 1.2 && < 3.0
+                      , filepath >= 1.4 && < 1.5
+                      , filemanip >= 0.3.6 && < 0.4
+                      , bytestring >= 0.10 && < 0.13
+                      , yaml >= 0.8 && < 0.13
   hs-source-dirs:       ./src
                       , ./src/lib/
   ghc-options:        -Wall -freverse-errors
@@ -142,33 +142,33 @@ library
 
 executable            gifcurry_gui
   main-is:            Main.hs
-  build-depends:        base == 4.11.*
-                      , haskell-gi == 0.23.0
-                      , haskell-gi-base == 0.23.0
-                      , gi-gobject == 2.0.22
-                      , gi-gio == 2.0.25
-                      , gi-glib == 2.0.23
-                      , gi-pango == 1.0.22
-                      , gi-gdk == 3.0.22
-                      , gi-gdkpixbuf == 2.0.23
-                      , gi-gtk == 3.0.32
-                      , gi-cairo == 1.0.23
-                      , gi-gstbase == 1.0.22
-                      , gi-gst == 1.0.22
-                      , gi-gstvideo == 1.0.22
-                      , cairo == 0.13.*
-                      , pango == 0.13.*
+  build-depends:        base >= 4.11 && < 5
+                      , haskell-gi >= 0.26 && < 1.0
+                      , haskell-gi-base >= 0.26 && < 1.0
+                      , gi-gobject >= 2.0 && < 3.0
+                      , gi-gio >= 2.0 && < 3.0
+                      , gi-glib >= 2.0 && < 3.0
+                      , gi-pango >= 1.0 && < 2.0
+                      , gi-gdk >= 3.0 && < 4.0
+                      , gi-gdkpixbuf >= 2.0 && < 3.0
+                      , gi-gtk >= 3.0 && < 4.0
+                      , gi-cairo >= 1.0 && < 2.0
+                      , gi-gstbase >= 1.0 && < 2.0
+                      , gi-gst >= 1.0 && < 2.0
+                      , gi-gstvideo >= 1.0 && < 2.0
+                      , cairo >= 0.13 && < 0.14
+                      , pango >= 0.13 && < 0.14
                       , process >= 1.6.2.0
-                      , temporary >= 1.2 && < 1.3
-                      , directory == 1.3.*
-                      , text == 1.2.*
-                      , time == 1.8.0.2
-                      , filepath == 1.4.*
-                      , filemanip == 0.3.6.*
-                      , transformers == 0.5.*
-                      , pureMD5 == 2.1.*
-                      , bytestring == 0.10.*
-                      , yaml == 0.8.26.*
+                      , temporary >= 1.2 && < 1.4
+                      , directory >= 1.3 && < 1.4
+                      , text >= 1.2 && < 3.0
+                      , time >= 1.8 && < 1.15
+                      , filepath >= 1.4 && < 1.5
+                      , filemanip >= 0.3.6 && < 0.4
+                      , transformers >= 0.5 && < 0.7
+                      , pureMD5 >= 2.1 && < 2.2
+                      , bytestring >= 0.10 && < 0.13
+                      , yaml >= 0.8 && < 0.13
                       , system-filepath == 0.4.14
                       , system-fileio == 0.3.16.4
   other-modules:        Paths_Gifcurry
@@ -192,17 +192,17 @@ executable            gifcurry_gui
 
 executable            gifcurry_cli
   main-is:            Main.hs
-  build-depends:        base == 4.11.*
+  build-depends:        base >= 4.11 && < 5
                       , process >= 1.6.2.0
-                      , temporary >= 1.2 && < 1.3
-                      , directory == 1.3.*
+                      , temporary >= 1.2 && < 1.4
+                      , directory >= 1.3 && < 1.4
                       , cmdargs == 0.10.*
-                      , text == 1.2.*
-                      , filepath == 1.4.*
-                      , filemanip == 0.3.6.*
-                      , aeson == 1.4.2.*
-                      , bytestring == 0.10.*
-                      , yaml == 0.8.26.*
+                      , text >= 1.2 && < 3.0
+                      , filepath >= 1.4 && < 1.5
+                      , filemanip >= 0.3.6 && < 0.4
+                      , aeson >= 1.4 && < 3.0
+                      , bytestring >= 0.10 && < 0.13
+                      , yaml >= 0.8 && < 0.13
   other-modules:      Gifcurry
   ghc-options:        -Wall -freverse-errors
   hs-source-dirs:       ./src/

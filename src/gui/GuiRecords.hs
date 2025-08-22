@@ -146,7 +146,6 @@ data GuiTextOverlayData =
     , textOverlayVertical        :: Double
     , textOverlayStartTime       :: Double
     , textOverlayEndTime         :: Double
-    , textOverlayEndTime         :: Double
     , textOverlayRotation        :: Int32
     , textOverlayOutlineSize     :: Int32
     , textOverlayOutlineColor    :: String

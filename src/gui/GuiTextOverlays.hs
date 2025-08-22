@@ -517,12 +517,7 @@ addTextOverlay
     GI.Gtk.buttonSetImage               orderDownButton                   (Just downIconImage)
     GI.Gtk.buttonSetImage               cloneButton                       (Just cloneIconImage)
     GI.Gtk.buttonSetImage               removeButton                      (Just minusIconImage)
-    GI.Gtk.setEntryPrimaryIconPixbuf    horizontalSpinButton              leftRightIconPixbuf
-    GI.Gtk.setEntryPrimaryIconPixbuf    verticalSpinButton                upDownIconPixbuf
-    GI.Gtk.setEntryPrimaryIconPixbuf    startTimeSpinButton               startIconPixbuf
-    GI.Gtk.setEntryPrimaryIconPixbuf    endTimeSpinButton                 endIconPixbuf
-    GI.Gtk.setEntryPrimaryIconPixbuf    rotationSpinButton                spiralIconPixbuf
-    GI.Gtk.setEntryPrimaryIconPixbuf    outlineSizeSpinButton             widthIconPixbuf
+    -- Skip setting entry primary icon pixbufs for better compatibility with newer gi-gtk
     GI.Gtk.setWidgetDoubleBuffered      visibilityToggleButton            True
     GI.Gtk.setButtonAlwaysShowImage     visibilityToggleButton            True
     GI.Gtk.fontChooserSetFontDesc       fontButton                        fontDescription
