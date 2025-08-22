@@ -2,6 +2,20 @@
 
 ## Changelog
 
+### 6.0.2.0
+
+#### Added
+
+- 
+
+#### Changed
+
+- Fixed build for ubuntu24
+
+#### Removed
+
+-
+
 ### 6.0.1.0
 
 #### Added
